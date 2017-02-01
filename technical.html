@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
+<link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
+<link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="overlay.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="overlayindex.js"></script>
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>IGNITE 2017 - A National Level Coding Competition by KL University</title>
+    <style>
+        body {
+            background: url("landscape.jpeg") no-repeat;
+            background-size: cover;
+            margin-left: 8%;
+            margin-right: 8%;
+           /*  min-height: 800px; */
+        }
+
+        h2 {
+            left:50%;
+            color: white;
+           /* position: fixed; */
+        }
+
+        button {
+            font-size: large;
+        }
+        p {
+             size: 150px;
+        }
+        .bg-4 { 
+             
+             color: #ffffff;
+             bottom: 0;
+        }
+        .author:hover {
+                color:black;
+        }
+        .author {
+            color:white;
+        }
+        a {
+            color: white;
+        }
+        .title{
+          font-family: ubuntu;
+          color:black;
+          font-size: 50px;
+        }
+        .body{
+          font-size: 20px;
+        }
+        .title3{
+        font-family: ubuntu;
+          color:black;
+          font-size: 25px;
+        }
+
+        .desc{
+            font-size: 15px;
+        }
+    </style>
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+    <script src="magic-canvas.min.js"></script>
+
+    <script>
+        function random_move () {
+            $.magicCanvas.draw({
+                type:"random-move",
+                rgb : function (circlePos) {
+                    var px = circlePos.x;
+                    var py = circlePos.y;
+                    // do some computation....
+                    return {r:parseInt(px % 255),g:parseInt(py % 255),b:203};
+                }
+            })
+         };
+</script>
+</head>
+<body onload="random_move()">
+<canvas id="reactive-bg-canvas"></canvas>
+   <nav>
+<ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="include.html">#include</a></li>
+    <li><a href="#">Technical Events</a></li>
+    <li><a href="#">Non-Tech Events</a></li>
+    <li><a href="workshops.html">Workshops</a></li>
+    <li><a href="register.html">Register</a></li>
+    <li><a href="#">Spot Events</a></li>
+</ul><br>
+<div class="button">
+    <a class="btn-open" href="#"></a>
+</div>
+</nav>  
+
+
+<div class="overlay">
+    <div class="wrap">
+        <ul class="wrap-nav">
+            <li><a href="#">About</a>
+            <ul>
+                <li><a href="#">About Company</a></li>
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Developers</a></li>
+                <li><a href="#">Pets</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Services</a>
+            <ul>
+                <li><a href="https://www.google.hr/">Web Design</a></li>
+                <li><a href="#">Development</a></li>
+                <li><a href="#">Apps</a></li>
+                <li><a href="#">Graphic design</a></li>
+                <li><a href="#">Branding</a></li>
+            </ul>
+            </li>
+            <li><a href="#">Work</a>
+            <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Graphic</a></li>
+                <li><a href="#">Apps</a></li>
+            </ul>
+            </li>
+        </ul>
+        <div class="social">
+            <a href="http://facebook.com/kluignite">
+            <div class="social-icon">
+                <i class="fa fa-facebook"></i>
+            </div>
+            </a>
+            <a href="http://twitter.com/kluignite">
+            <div class="social-icon">
+                <i class="fa fa-twitter"></i>
+            </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12">
+      <h1 align="center" class="title">Technical and Coding Competitions</h1>
+    </div>
+    </div>
+
+<div class="row">
+    <div class="col-sm-12">
+      <h3 align="left" class="title3">Street Coding</h3>
+    </div>
+    <div class="col-sm-3">
+         <img src="stc.png" align="centre" width="100%" height="100%">
+    </div>
+    <div class="col-sm-7"><br><br>
+      <p class="desc"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
+    </div>
+     <div class="col-sm-2"><br><br>
+          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+      <h3 align="left" class="title3">Blind Coding</h3>
+    </div>
+    <div class="col-sm-2"><br><br>
+          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div>
+    </div>
+    <div class="col-sm-7"><br><br>
+      <p class="desc"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
+    </div>
+    <div class="col-sm-3">
+         <img src="blc.png" align="centre" width="100%" height="100%">
+    </div>  
+</div>
+<div class="row">
+    <div class="col-sm-12">
+      <h3 align="left" class="title3">Stock Trading</h3>
+    </div>
+    <div class="col-sm-3">
+         <img src="stt.png" align="centre" width="90%" height="80%">
+    </div>
+    <div class="col-sm-7"><br><br><br><br>
+      <p class="desc" style="color: white"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
+    </div>
+    <div class="col-sm-2"><br><br><br><br>
+          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-sm-12">
+      <h3 align="left" class="title3">Capture the Flaw</h3>
+    </div>
+    <div class="col-sm-2"><br><br>
+          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div>
+    </div>
+    <div class="col-sm-7"><br><br>
+      <p class="desc" style="color: white"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
+    </div>
+    <div class="col-sm-3">
+         <img src="ctf.png" align="centre" width="100%" height="100%">
+    </div>  
+</div>
+<div class="row">
+    <div class="col-sm-12">
+      <h3 align="left" class="title3">Linux Master</h3>
+    </div>
+    <div class="col-sm-3">
+         <img src="lm.png" align="centre" width="90%" height="80%">
+    </div>
+    <div class="col-sm-7"><br><br><br><br>
+      <p class="desc" style="color: white"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
+    </div>
+    <div class="col-sm-2"><br><br><br><br>
+          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div>
+    </div>
+</div>
+<footer class="container-fluid bg-4 text-center">
+<div class="row">
+        <div class="col-lg-12">
+            <ul class="nav nav-tabs nav-justified">
+                <li><a href="aboutus.html">About us</a></li>
+                <li><a href="#">Accomodation</a></li>
+                <li><a href="#">Reaching KL University</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><small>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://srikarkashyap.github.io" class="author">Srikar Kashyap Pulipaka</a></small></li>
+            </ul>
+        </div>
+    </div>
+     
+</footer>
+
+
+
+</html>
