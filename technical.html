@@ -38,6 +38,7 @@
         }
         p {
              size: 150px;
+             text-align: justify;
         }
         .bg-4 { 
              
@@ -74,6 +75,61 @@
             font-size: 15px;
             font-family: 'Aldrich',san-serif;
         }
+
+        .modalDialog {
+  position: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+     -moz-transition: opacity 400ms ease-in;
+      transition: opacity 400ms ease-in;
+      pointer-events: none;
+  }
+
+  .modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 50%;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  
+  /* background: -moz-linear-gradient(#fff, #999);
+  background: -webkit-linear-gradient(#fff, #999);
+  background: -o-linear-gradient(#fff, #999); */
+}
+
+.close {
+  /* background: #606061; */
+  background: orange;
+  color: #FFFFFF;
+  line-height: 25px;
+  position: absolute;
+  right: -12px;
+  text-align: center;
+  top: -10px;
+  width: 24px;
+  text-decoration: none;
+  font-weight: bold;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 3px #000;
+  -webkit-box-shadow: 1px 1px 3px #000;
+  box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
     </style>
     <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
@@ -156,13 +212,13 @@
 
 <div class="row">
     <div class="col-sm-12">
-      <h1 align="center" class="title" style="color:white">Technical and Coding Competitions</h1>
+      <h1 align="center" class="title" style="color:darkorange">Technical and Coding Competitions</h1>
     </div>
     </div>
 
 <div class="row">
     <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:white">Street Coding</h3>
+      <h3 align="left" class="title3" style="color:brown">Street Coding</h3>
     </div>
     <div class="col-sm-4">
          <img src="stc.png" align="centre" width="80%" height="80%">
@@ -176,13 +232,40 @@
 </div>
 <div class="row">
     <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:white">Blind Coding</h3>
+      <h3 align="left" class="title3" style="color:brown">Blind Coding</h3>
     </div>
     <!-- <div class="col-sm-2"><br><br>
           <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div> -->
     </div>
     <div class="col-sm-8"><br><br>
       <p class="desc" style="color:white">Test how accurate you code! Take a question and code while the screen is turned off! Don't expect the questions to be "Addition of numbers" kind of questions... brace for tough nuts to crack in this challenge! </p>
+      <button onclick="#openModal">Know More</button>
+
+<div id="openModal" class="modalDialog">
+  <div>
+    <a href="#close" title="Close" class="close">X</a>
+      <p class="body" style="color:white; text-align: justify;">Do you have a knack for competitive programming and always dreamt of winning the prestigious ACM ICPC? Then you will surely love this challenge! Designed on the lines of ICPC (and as challenging), #include is the flagship coding competition of IGNITE 2017 and is sure to unleash the inner coder of you! So what are you waiting for...come join the coding extravaganza and win prizes worth ₹65,000!
+    </p>
+    <h4><b>Problem Statement</b></h4>
+
+    <p class="body" style="color:white; text-align: justify;">Contestants are required to solve competitive programming questions in the given amount of time. Programming and Algorithmic skills of the contestant would be tested.</p>
+
+    <h4><b>Format</b></h4>
+
+    <p class="body" style="color:white; text-align: justify;">It would be an online-offline contest hosted on Codechef with 2 rounds - One preliminary and the final round. The preliminary round will be pure offline held in the third week of February (date would be announced soon). The finals would be held on campus at KL University on 2 March 2017. </p>
+
+    <h4><b>Certification</b></h4>
+
+    <p class="body" style="color:white; text-align: justify;">Top three teams will be awarded Certificates of Excellence and cash prizes. All others Certificate of Participation. </p>
+
+
+    <h4><b>Contact</b></h4>
+   <p >Sandeep VVN <br>
+    Coordinator, #include<br>
+    14003136@kluniversity.in <br>
+    8978080080</p>
+  </div>
+</div>
     </div>
     <div class="col-sm-4">
          <img src="blc.png" align="centre" width="70%" height="70%">
@@ -190,7 +273,7 @@
 </div>
 <div class="row">
     <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:white">Stock Trading</h3>
+      <h3 align="left" class="title3" style="color:brown">Stock Trading</h3>
     </div>
     <div class="col-sm-4">
          <img src="stt.png" align="centre" width="70%" height="70%">
@@ -204,7 +287,7 @@
 </div>
 <div class="row">
     <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:white">Capture the Flaw</h3>
+      <h3 align="left" class="title3" style="color:brown">Capture the Flaw</h3>
     </div>
     <!-- <div class="col-sm-2"><br><br>
           <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div> -->
@@ -218,7 +301,7 @@
 </div>
 <div class="row">
     <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:white">Linux Master</h3>
+      <h3 align="left" class="title3" style="color:brown">Linux Master</h3>
     </div>
     <div class="col-sm-4">
          <img src="lm.png" align="centre" width="50%" height="50%">
