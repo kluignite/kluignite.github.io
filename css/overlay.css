@@ -25,7 +25,7 @@ nav {
 }
 nav ul {
 	text-align:center;
-}
+	}
 nav ul li {
 	display:inline-block;
 }
@@ -34,7 +34,7 @@ nav ul li a {
 	display:inline-block;
 	padding:1em 3em;
 	text-decoration:none;
-	border-bottom:2px solid #fff;
+	border-bottom: 0px;
 	transition-property:all .2s linear 0s;
 	-moz-transition:all .2s linear 0s;
 	-webkit-transition:all .2s linear 0s;
@@ -42,7 +42,7 @@ nav ul li a {
 	font-size:16px;
 }
 nav ul li a:hover {
-	color: #34B484;
+	color: grey;
 }
 /*styling open close button*/
 .button {
