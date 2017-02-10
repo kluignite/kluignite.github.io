@@ -7,16 +7,15 @@
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
 <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="css/overlay.css">
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/overlayindex.js"></script>
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/overlay.css">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/overlayindex.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/jquery-ui.js" type="text/javascript"></script>
 <link href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.8.9/themes/blitzer/jquery-ui.css" rel="stylesheet" type="text/css" />
     <title>IGNITE 2017 - A National Level Coding Competition by KL University</title>
     <style>
@@ -106,21 +105,7 @@
         background-color: yellow;
     }
 </style>
-<script type="text/javascript">
-    $(function () {
-        $("#dialog").dialog({
-            modal: true,
-            autoOpen: false,
-            title: "Street Coding",
-            width: 700,
-            height: 450,
 
-        });
-        $("#btnShow").click(function () {
-            $('#dialog').dialog('open');
-        });
-    });
-</script>
 </head>
 <body onload="random_move()">
 <canvas id="reactive-bg-canvas"></canvas>
@@ -182,107 +167,85 @@
         </div>
     </div>
 </div>
-
 <div class="row">
     <div class="col-sm-12">
       <h1 align="center" class="title" style="color:darkorange">Technical and Coding Competitions</h1>
     </div>
     </div>
 
-<div class="row">
-    <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:brown">Street Coding</h3>
+<div>
+
+  <!-- Nav tabs -->
+ <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Street Coding</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Blind Coding</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Stock Trading</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Capture the Flaw</a></li>
+  </ul>
+
+
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home"><div class="row">
+    <div class="col-sm-9">
+      <h1 align="center" class="title" style="color:darkorange;">Street Coding</h1>
     </div>
-    <div class="col-sm-4">
-         <img src="img/stc.png" align="centre" width="80%" height="80%">
+    <div class="col-sm-3" style=";">
+      powered by <img src="img/codecheflogo.png" align="centre" width="40%" height="20%">
     </div>
-    <div class="col-sm-8"><br><br>
-      <p class="desc" style="color:white"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
-<input type="button" id="btnShow" value="Know More"/>
-<div id="dialog" style="display: none" align = "center">
- <div class="col-sm-4">
-         <img src="img/stc.png" align="centre" width="70%" height="70%">
     </div>
-        <p class="body" style="; text-align: justify;">Do you love coding whenever, wherever it’s possible? (not the Shakira song) Do you dream of algorithms in your sleep? Then come join the Street Coding to continue your love affair with coding! Go wherever the problem takes you (maybe the Library?) and return with the solution! Jump into the world of super challenging problems and solve it by any means possible!
+    <p class="body" style="color:white; text-align: justify;">Do you love coding whenever, wherever it’s possible? (not the Shakira song) Do you dream of algorithms in your sleep? Then come join the Street Coding to continue your love affair with coding! Go wherever the problem takes you (maybe the Library?) and return with the solution! Jump into the world of super challenging problems and solve it by any means possible!
     </p>
     <h4><b>Problem Statement</b></h4>
 
-    <p class="body" style="; text-align: justify;">Participants are given a problem which they need to solve by any means. They can refer any textbook, website or consult other person but need to get the solution before the allocated time ends!</p>
+    <p class="body" style="color:white; text-align: justify;">
+Participants are given a problem which they need to solve by any means. They can refer any textbook, website or consult other person but need to get the solution before the allocated time ends!</p>
 
     <h4><b>Format</b></h4>
 
-    <p class="body" style="; text-align: justify;">The event would consist of two fully online rounds accessible only in the college campus.</p>
+    <p class="body" style="color:white; text-align: justify;">The event would consist of two fully online rounds accessible only in the college campus. </p>
 
     <h4><b>Certification</b></h4>
 
-    <p class="body" style="; text-align: justify;">Top three participants will be awarded Certificates of Excellence and cash prizes. All others Certificate of Participation.</p>
+    <p class="body" style="color:white; text-align: justify;">Top three participants will be awarded Certificates of Excellence and cash prizes. All others Certificate of Participation.
+</p>
+</div>
+    <div role="tabpanel" class="tab-pane" id="profile"><div class="row">
+    <div class="col-sm-9">
+      <h1 align="center" class="title" style="color:darkorange;">Blind Coding</h1>
+    </div>
+    </div>
+    <p class="body" style="color:white; text-align: justify;">Are you a pro at coding without looking at the keyboard? Do you amaze your friends with your supersonic speeds in coding yet having least number of typos? Then this is the perfect event for you! Buckle up and join the fight for the coveted Blind Coder title where you code furiously without having a look at what you are typing (not the Hello World program though)
+</p>
+    <h4><b>Problem Statement</b></h4>
+
+    <p class="body" style="color:white; text-align: justify;">
+The participant needs to solve algorithmic challenges with the monitors turned off. Systems would be provided at the college for this.
+</p>
+
+    <h4><b>Format</b></h4>
+
+    <p class="body" style="color:white; text-align: justify;">
+The event would be fully online with two levels with varying difficulty. Participants are given problem statements and need to code them in the allocated time. Person with the least number of errors wins!. </p>
+
+    <h4><b>Certification</b></h4>
+
+    <p class="body" style="color:white; text-align: justify;">Top three participants will be awarded Certificates of Excellence and cash prizes. All others Certificate of Participation.
+</p>
 
 
     <h4><b>Contact</b></h4>
-   <p >V Bhargav Raj<br>
-    14003177@kluniversity.in <br>
-    G Manikanta Varma<br>
-    14003086@kluniversity.in </p>
+   <p>R Dileep </p>
+<p>14003309@kluniversity.in</p>
+<p>P Chakradhar Reddy</p>
+<p>14003210@kluniversity.in</p>
 </div>
+    <div role="tabpanel" class="tab-pane" id="messages">Potlakayy</div>
+    <div role="tabpanel" class="tab-pane" id="settings">Sorakayyy</div>
+  </div>
+
 </div>
-</div>
-<div class="row">
-    <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:brown">Blind Coding</h3>
-    </div>
-    <!-- <div class="col-sm-2"><br><br>
-          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div> -->
-    </div>
-    <div class="col-sm-8"><br><br>
-      <p class="desc" style="color:white">Test how accurate you code! Take a question and code while the screen is turned off! Don't expect the questions to be "Addition of numbers" kind of questions... brace for tough nuts to crack in this challenge! </p>
-      <button onclick="#openModal">Know More</button>
-    </div>
-    <div class="col-sm-4">
-         <img src="img/blc.png" align="centre" width="70%" height="70%">
-    </div>  
-</div>
-<div class="row">
-    <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:brown">Stock Trading</h3>
-    </div>
-    <div class="col-sm-4">
-         <img src="img/stt.png" align="centre" width="70%" height="70%">
-    </div>
-    <div class="col-sm-8"><br><br><br><br>
-      <p class="desc" style="color: white" > Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
-    </div>
-    <!-- <div class="col-sm-2"><br><br><br><br>
-          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div>
-    </div> -->
-</div>
-<div class="row">
-    <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:brown">Capture the Flaw</h3>
-    </div>
-    <!-- <div class="col-sm-2"><br><br>
-          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div> -->
-    </div>
-    <div class="col-sm-8"><br><br>
-      <p class="desc" style="color: white"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
-    </div>
-    <div class="col-sm-4">
-         <img src="img/clf.jpg" align="centre" width="70%" height="70%">
-    </div>  
-</div>
-<div class="row">
-    <div class="col-sm-12">
-      <h3 align="left" class="title3" style="color:brown">Linux Master</h3>
-    </div>
-    <div class="col-sm-4">
-         <img src="img/lm.png" align="centre" width="50%" height="50%">
-    </div>
-    <div class="col-sm-8"><br><br><br><br>
-      <p class="desc" style="color: white"> Take the question and go anywhere! Get the solution at the end of the time period! So simple isn't it? Don't expect Hello World problem statements though...brace for high-end and tough nuts to crack in this challenge!</p>
-    </div>
-    <!--<div class="col-sm-2"><br><br><br><br>
-          <div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="register.html"><h4 style="color:black"> Register</h4></a></button></div>
-    </div> -->
-</div>
+
 <footer class="container-fluid bg-4 text-center">
 <div class="row">
         <div class="col-lg-12">

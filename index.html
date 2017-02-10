@@ -21,6 +21,7 @@
 <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
 <script src="js/magic-canvas.min.js"></script>
+<script type="text/javascript" src="js/news.js"></script>
 <title>IGNITE 2017 - A National Level Coding Competition by KL University</title>
 
 <!-- CSS Styles -->
@@ -66,6 +67,10 @@
         .navbars {
             border-bottom: 0px;
         }
+
+        .navbarsb {
+            border-bottom: 0px;
+        }
         .navbars:hover {
             color: grey;
         }
@@ -73,6 +78,37 @@
             font-size: 100%;
             font-family: 'Aldrich',san-serif;
         }
+
+        .holder { 
+  background-color:transparent;
+  width:300px;
+  height:250px;
+  overflow:hidden;
+  padding:10px;
+  font-family:Helvetica;
+}
+.holder .mask {
+  position: relative;
+  left: 0px;
+  top: 10px;
+  width:300px;
+  height:240px;
+  overflow: hidden;
+}
+.holder ul {
+  list-style:none;
+  margin:0;
+  padding:0;
+  position: relative;
+}
+.holder ul li {
+  padding:10px 0px;
+}
+.holder ul li a {
+  color:darkred;
+  text-decoration:none;
+}
+
 
 </style>
 
@@ -119,8 +155,16 @@
   </div>
 
 <h3 style="color: white;">presents</h3>
-<div class="col-sm-3"><br><br><br><br>
-<h4 style="color: white">Win Prizes worth ₹2 lakh!</h4>
+<div class="col-sm-3">
+<h2>Updates</h2>
+<div class="holder">
+  <ul id="ticker01">
+                            <li><span>10/10/2007</span><a href="#">The first thing that most Javascript programmers</a></li>
+                            <li><span>10/10/2007</span><a href="#">End up doing is adding some code</a></li>
+                            <li><span>10/10/2007</span><a href="#">The code that you want to run</a></li>
+                            <li><span>08/10/2007</span><a href="#">Inside of which is the code that you want to run</a>
+                </ul>
+</div>
 </div>
 <div class="col-sm-6">
 <img src="img/iglogo.png" align="centre" width="370px" height="260px"> 
@@ -128,7 +172,7 @@
 <h2 style="color:white">1 & 2 March 2017, KL University, Vijayawada</h2>
 </div>
 <div class="col-sm-3"><br><br><br><br>
-<h4 style="color: white"><a href="register.html">Register now!</a></h4>
+<h4 style="color: white">Win Prizes worth ₹2 lakh!</h4><br><a href="register.html">Register now!</a></h4>
 </div>
 <div class="button">
     <a class="btn-open" href="#"></a>
@@ -183,11 +227,11 @@
 <div class="row">
         <div class="col-lg-12">
             <ul class="nav nav-tabs nav-justified">
-                <li><a href="aboutus.html">About us</a></li>
-                <li><a href="hospitality.html">Hospitality</a></li>
-                <li><a href="reachus.html">Reaching KL University</a></li>
-                <li><a href="#">Contact us</a></li>
-                <li><a href="#">Campus Ambassador Program</a></li>
+                <li><a href="aboutus.html" class="navbarsb" >About us</a></li>
+                <li><a href="hospitality.html" class="navbarsb">Hospitality</a></li>
+                <li><a href="reachus.html" class="navbarsb">Reaching KL University</a></li>
+                <li><a href="#" class="navbarsb">Contact us</a></li>
+                <li><a href="#" class="navbarsb">Campus Ambassador Program</a></li>
                 <li><small>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://srikarkashyap.github.io" class="author">Srikar Kashyap Pulipaka</a></small></li>
             </ul>
         </div>
