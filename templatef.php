@@ -45,7 +45,7 @@
 
                 <div>
                     <i class="fa fa-map-marker"></i>
-                   <a href="https://www.google.co.in/maps/place/KL+University/@16.441805,80.6200281,17z" data-toggle="tooltip" title="Click to go to Google Maps"><p><span>C-Block, K L University</span> near Vijayawada, Andhra Pradesh </p></a>
+                   <a href="https://www.google.co.in/maps/place/KL+University/@16.441805,80.6200281,17z" data-toggle="tooltip" title="Click to go to Google maps"><p><span>C-Block, K L University</span> near Vijayawada, Andhra Pradesh </p></a>
                 </div>
 
                 <div>
