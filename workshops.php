@@ -3,40 +3,42 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<!-- Importing scripts (including particle effects, bootstrap, custom font(?) etc) -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet">
 <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css" rel="stylesheet">
 <link href='http://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="css/overlay.css">
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="js/overlayindex.js"></script>
-   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
-   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <title>IGNITE 2017 - A National Level Coding Competition by KL University</title>
-    <style>
-     @import url('https://fonts.googleapis.com/css?family=Aldrich');
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/overlay.css">
+<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<link rel="stylesheet" href="fire.css"> 
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<script src="js/overlayindex.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
+<script src="js/magic-canvas.min.js"></script>
+<title>IGNITE 2017 - A National Level Coding Competition by KL University</title>
+
+<!-- CSS Styles -->
+     <style>
+        @import url('https://fonts.googleapis.com/css?family=Aldrich');
         body {
             background: url("img/blur.jpg") no-repeat;
             background-size: cover;
-                        margin-left: 8%;
-            margin-right: 8%;
-            font-family: 'Aldrich',san-serif;
            /*  min-height: 800px; */
         }
 
         h2 {
             left:50%;
             color: white;
+            font-size: 150%;
             font-family: 'Aldrich',san-serif;
            /* position: fixed; */
         }
-        h4 {
-            color: brown;
-        }
+
         button {
             font-size: large;
             font-family: 'Aldrich',san-serif;
@@ -44,7 +46,6 @@
         p {
              size: 150px;
              font-family: 'Aldrich',san-serif;
-             color: white;
         }
         .bg-4 { 
              
@@ -52,7 +53,7 @@
              bottom: 0;
         }
         .author:hover {
-                color:black;
+                color:white;
         }
         .author {
             color:white;
@@ -61,20 +62,16 @@
             color: white;
             font-family: 'Aldrich',san-serif;
         }
-        .title{
-          font-family: 'Aldrich',san-serif;
-          color:white;
-          font-size: 80px;
-          text-align: left;
+
+        h3 {
+            font-size: 100%;
+            font-family: 'Aldrich',san-serif;
         }
-        .body{
-          font-size: 15px;
-          font-family: 'Aldrich',san-serif;
-        }
-    </style>
-    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenLite.min.js"></script>
-    <script src="js/magic-canvas.min.js"></script>
+
+        
+</style>
+
+<!-- Background particle effect JS code -->
 
     <script>
         function random_move () {
@@ -90,6 +87,7 @@
          };
 </script>
 </head>
+
 <body onload="random_move()">
 <canvas id="reactive-bg-canvas"></canvas>
    <nav>
@@ -101,11 +99,41 @@
     <li><a href="workshops.html" style="color: white;">Workshops</a></li>
     <li><a href="register.html" style="color: white;">Register</a></li>
 </ul><br>
+<div class="row">
+    <div class="col-sm-3">
+      <img src="img/focus.png" align="centre" width="30%" height="30%">
+    </div>
+    <div class="col-sm-6">
+       <img src="img/klulogo.gif" align="centre" width="70%" height="70%">
+    </div>
+        <div class="col-sm-3">
+       <p> in association with</p>
+      <img src="img/codecheflogo.png" align="left" width="40%" height="40%">
+      <img src="img/hackerrank.png" align="centre" width="30%" height="30%">
+    </div>
+  </div>
+
+<h2>WORKSHOPS</h2>
+<div class="col-sm-4">
+<img src="img/wd.png" align="centre" width="60%" height="60%"><br><br><br>
+<h2 style="color:white">Web Development</h2>
+<h5><div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="mit.html"><h4 style="color:black"> Know More</h4></a></button></div></h5>
+</div>
+<div class="col-sm-4"><br><br>
+<!--<h5><i>A National Level Coding Competition</i></h5>-->
+<img src="img/vr.png" align="centre" width="50%" height="50%"><br>
+<h2 style="color:white">Virtual Reality (VR) App Design</h2>
+<h5><div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="mit.html"><h4 style="color:black"> Know More</h4></a></button></div></h5>
+</div>
+<div class="col-sm-4"><br><br><br><br>
+<img src="img/mit.png" align="centre" width="80%" height="80%"><br><br><br><br>
+<h2 style="color:white">MIT App Inventor</h2>
+<h5><div class="mbr-buttons mbr-buttons--right"><button type="button" class="mbr-buttons__btn btn btn-lg btn-default"><a href="mit.html"><h4 style="color:black"> Know More</h4></a></button></div></h5>
+</div>
 <div class="button">
     <a class="btn-open" href="#"></a>
 </div>
-</nav>  
-
+</nav>
 
 <div class="overlay">
     <div class="wrap">
@@ -150,36 +178,7 @@
         </div>
     </div>
 </div>
-<div class="row">
-    <div class="col-sm-9">
-      <h1 align="center" class="title" style="color:darkorange;">#include</h1>
-    </div>
-    <div class="col-sm-3" style="color:white;">
-      powered by <img src="img/codecheflogo.png" align="centre" width="50%" height="50%">
-    </div>
-    </div>
-    <p class="body" style="color:white; text-align: justify;">Do you have a knack for competitive programming and always dreamt of winning the prestigious ACM ICPC? Then you will surely love this challenge! Designed on the lines of ICPC (and as challenging), #include is the flagship coding competition of IGNITE 2017 and is sure to unleash the inner coder of you! So what are you waiting for...come join the coding extravaganza and win prizes worth ₹65,000!
-    </p>
-    <h4><b>Problem Statement</b></h4>
-
-    <p class="body" style="color:white; text-align: justify;">Contestants are required to solve competitive programming questions in the given amount of time. Programming and Algorithmic skills of the contestant would be tested.</p>
-
-    <h4><b>Format</b></h4>
-
-    <p class="body" style="color:white; text-align: justify;">It would be an online-offline contest hosted on Codechef with 2 rounds - One preliminary and the final round. The preliminary round will be pure offline held in the third week of February (date would be announced soon). The finals would be held on campus at KL University on 2 March 2017. </p>
-
-    <h4><b>Certification</b></h4>
-
-    <p class="body" style="color:white; text-align: justify;">Top three teams will be awarded Certificates of Excellence and cash prizes. All others Certificate of Participation. </p>
-
-
-    <h4><b>Contact</b></h4>
-   <p >Sandeep VVN <br>
-    Coordinator, #include<br>
-    14003136@kluniversity.in <br>
-    8978080080</p>
-</p><br><br><br>
-</body>
+</body><br><br><br>
 <footer class="container-fluid bg-4 text-center">
 <div class="row">
         <div class="col-lg-12">
@@ -188,13 +187,12 @@
                 <li><a href="#">Accomodation</a></li>
                 <li><a href="#">Reaching KL University</a></li>
                 <li><a href="#">Contact us</a></li>
+                <li><a href="#">Campus Ambassador Program</a></li>
                 <li><small>Made with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://srikarkashyap.github.io" class="author">Srikar Kashyap Pulipaka</a></small></li>
             </ul>
         </div>
     </div>
      
 </footer>
-
-
 
 </html>
