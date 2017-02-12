@@ -9,9 +9,8 @@
                     ·
                     <a href="hospitality.php">Hospitality</a>
                     ·
-                    <a href="ambassador.php">Campus Ambassador</a>
-                    ·
-                    <a href="contacts.php">Contacts</a>
+                    <a href="campusambassador.php">Campus Ambassador</a>
+
                 </p>
 
             </div>
@@ -30,7 +29,7 @@
 
                 <div>
                     <i class="fa fa-envelope"></i>
-                    <p><a href="mailto:support@company.com">contact@kluignite.in</a></p>
+                    <p><a href="mailto:contact@kluignite.in">contact@kluignite.in</a></p>
                 </div>
 
             </div>
@@ -47,7 +46,7 @@
                     <a href="http://twitter.com/kluignite"><i class="fa fa-twitter"></i></a>
                     <a href="https://www.linkedin.com/company-beta/13260003/"><i class="fa fa-linkedin"></i></a>
                     <a href="http://github.com/kluignite"><i class="fa fa-github"></i></a>
-                    <a href="http://github.com/kluignite"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/kluignite_17/"><i class="fa fa-instagram"></i></a>
                 </div>
                 <p>Powered by <a href="http://tenethost.com/">TenetHost</a></p>
             </div>

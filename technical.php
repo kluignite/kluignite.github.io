@@ -74,14 +74,13 @@ require "template.php";
   <!-- Nav tabs -->
  <!-- Nav tabs -->
   <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#home" aria-controls="streetcoding" role="tab" data-toggle="tab">Street Coding</a></li>
+    <li role="presentation" class="active"><a href="#streetcoding" aria-controls="streetcoding" role="tab" data-toggle="tab">Street Coding</a></li>
     <li role="presentation"><a href="#blindcoding" aria-controls="blindcoding" role="tab" data-toggle="tab">Blind Coding</a></li>
     <li role="presentation"><a href="#stocktrading" aria-controls="stocktrading" role="tab" data-toggle="tab">Stock Trading</a></li>
     <li role="presentation"><a href="#linuxmaster" aria-controls="linuxmaster" role="tab" data-toggle="tab">Linux Master</a></li>
     <li role="presentation"><a href="#capturetheflaw" aria-controls="capturetheflaw" role="tab" data-toggle="tab">Capture the Flaw</a></li>
     <li role="presentation"><a href="#googlinggenius" aria-controls="googlinggenius" role="tab" data-toggle="tab">Googling Genius</a></li>
     <li role="presentation"><a href="#cybertreasure" aria-controls="cybertreasure" role="tab" data-toggle="tab">Cyber Treasure Hunt</a></li>
-    <li role="presentation"><a href="#langaming" aria-controls="langaming" role="tab" data-toggle="tab">LAN Gaming</a></li>
   </ul>
 
 
@@ -260,7 +259,7 @@ Top three participants will be awarded Certificates of Excellence and cash prize
 <p>M Niveditha</p>
 <p>14003272@kluniversity.in</p> 
 </div>
-    <div role="tabpanel" class="tab-pane active" id="capturetheflaw"><div class="row">
+    <div role="tabpanel" class="tab-pane" id="capturetheflaw"><div class="row">
     <div class="col-sm-9">
       <h2 align="left" style="color:darkorange; font-size: 40px;">Capture the Flaw</h2>
     </div>
@@ -283,33 +282,6 @@ The participants would be given websites or computer systems with certain flaws.
   <h4><b style="color: maroon";>Contact</b></h4>
   <p>K Uday Kiran Reddy</p> 
   <p>14003207@kluniversity.in</p>
-</div>
-
-<div role="tabpanel" class="tab-pane active" id="langaming"><div class="row">
-    <div class="col-sm-9">
-      <h2 align="left" style="color:darkorange; font-size: 40px;">Street Coding</h2>
-    </div>
-    </div>
-    <p class="body" style="color:white; text-align: justify;">Do you love coding whenever, wherever it’s possible? (not the Shakira song) Do you dream of algorithms in your sleep? Then come join the Street Coding to continue your love affair with coding! Go wherever the problem takes you (maybe the Library?) and return with the solution! Jump into the world of super challenging problems and solve it by any means possible!
-    </p>
-    <h4><b style="color: maroon">Problem Statement</b></h4>
-
-    <p class="body" style="color:white; text-align: justify;">
-Participants are given a problem which they need to solve by any means. They can refer any textbook, website or consult other person but need to get the solution before the allocated time ends!</p>
-
-    <h4><b style="color: maroon">Format</b></h4>
-
-    <p class="body" style="color:white; text-align: justify;">The event would consist of two fully online rounds accessible only in the college campus. </p>
-
-    <h4><b style="color: maroon">Certification</b></h4>
-
-    <p class="body" style="color:white; text-align: justify;">Top three participants will be awarded Certificates of Excellence and cash prizes. All others Certificate of Participation.
-</p>
-  <h4><b style="color: maroon";>Contact</b></h4>
-  <p>V Bhargav Raj</p> 
-  <p>14003177@kluniversity.in</p>
-  <p>G Manikanta Varma</p>
-  <p>14003086@kluniversity.in</p>
 </div>
 
 </div>
