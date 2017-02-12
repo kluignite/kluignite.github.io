@@ -75,7 +75,7 @@ require "template.php";
 
     <h4><b>Format</b></h4>
 
-    <p class="body" style="color:white; text-align: justify;">It would be an online-offline contest hosted on Codechef with 2 rounds - One preliminary and the final round. The preliminary round will be pure offline held in the third week of February (date would be announced soon). The finals would be held on campus at KL University on 2 March 2017. </p>
+    <p class="body" style="color:white; text-align: justify;">It would be an online-offline contest hosted on Codechef with 2 rounds - One preliminary and the final round. The preliminary round will be pure online held in the third week of February (date would be announced soon). The finals would be held on campus at KL University on 2 March 2017. </p>
 
     <h4><b>Certification</b></h4>
 

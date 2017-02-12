@@ -1,4 +1,30 @@
+<style>
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+</style>
 <footer class="footer-distributed">
 
             <div class="footer-left">
@@ -19,12 +45,13 @@
 
                 <div>
                     <i class="fa fa-map-marker"></i>
-                    <p><span>C-Block, K L University</span> near Vijayawada, Andhra Pradesh, India</p>
+                   <a href="https://www.google.co.in/maps/place/KL+University/@16.441805,80.6200281,17z" data-toggle="tooltip" title="Click to go to Google Maps"><p><span>C-Block, K L University</span> near Vijayawada, Andhra Pradesh </p></a>
                 </div>
 
                 <div>
                     <i class="fa fa-phone"></i>
-                    <p>+91 9849323361</p>
+                     <p class="numbers">+91 83095 23062 <br>
+                     +91 70219 97203 </p>
                 </div>
 
                 <div>
