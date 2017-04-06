@@ -1,3 +1,5 @@
-The Repo for the official website of IGNITE 2017, a national level coding competition organized by the department of Computer Science and Engineering,K L University
+The pre-release beta version of the website with no database functionality (later added in final version). 
 
-More details found at kluniversity.in/ignite
+Authors: Srikar Kashyap Pulipaka (SrikarKashyap) and Chaitanya Krishna Kasaraneni (kck1710)
+
+See final version at kluignite.in 
